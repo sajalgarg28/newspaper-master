@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.dashController">
+   <children>
+      <Label layoutX="239.0" layoutY="14.0" text="Dashboard" textFill="RED">
+         <font>
+            <Font name="Courier New Bold" size="21.0" />
+         </font>
+      </Label>
+      <Line endX="155.0" endY="1.52587890625E-5" layoutX="322.0" layoutY="48.0" startX="-219.0" />
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="38.0" layoutY="79.0" onMouseClicked="#dopaperdetails" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../dashboarpics/paperdetails.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="397.0" layoutY="425.0" onMouseClicked="#dobillgenerator" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../dashboarpics/billcollector.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="216.0" layoutY="79.0" onMouseClicked="#doaddhawker" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../dashboarpics/hawkerview.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="316.0" layoutY="250.0" onMouseClicked="#doaddcustomer" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../dashboarpics/customerview.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="110.0" layoutY="250.0" onMouseClicked="#docustomertable" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../dashboarpics/customertable.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="217.0" layoutY="425.0" onMouseClicked="#duebilltable" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../dashboarpics/duebill.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="31.0" layoutY="425.0" onMouseClicked="#dopayment" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../dashboarpics/billpayment.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="300.0" layoutX="399.0" layoutY="79.0" onMouseClicked="#dohawkertable" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../dashboarpics/hawkertable.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

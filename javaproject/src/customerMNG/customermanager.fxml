@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="customerMNG.customermanagerController">
+   <children>
+      <Label layoutX="199.0" layoutY="25.0" text="Customer Manager" textFill="RED">
+         <font>
+            <Font name="Courier New Bold" size="21.0" />
+         </font>
+      </Label>
+      <Line fx:id="line" endX="226.0" layoutX="297.0" layoutY="82.0" startX="-201.0" />
+      <TextField fx:id="txtname" layoutX="378.0" layoutY="119.0" />
+      <ComboBox fx:id="combomobile" editable="true" layoutX="96.0" layoutY="119.0" onAction="#domobile" prefWidth="150.0" />
+      <Label layoutX="378.0" layoutY="98.0" text="Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="98.0" layoutY="98.0" text="Mobile Number">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="261.0" layoutY="119.0" mnemonicParsing="false" onAction="#dosearch" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: blue; -fx-text-fill: white; -fx-background-radius: 8px;" text="SEARCH">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="txtaddress" layoutX="97.0" layoutY="193.0" prefHeight="36.0" prefWidth="435.0" />
+      <Label layoutX="98.0" layoutY="167.0" text="Address">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboarea" editable="true" layoutX="96.0" layoutY="275.0" onAction="#doarea" prefWidth="150.0" />
+      <TextField fx:id="txthawker" disable="true" layoutX="378.0" layoutY="275.0" />
+      <Label layoutX="98.0" layoutY="252.0" text="Area">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="252.0" text="Hawker Assigned">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="combopaper" layoutX="96.0" layoutY="349.0" onAction="#dopaper" prefWidth="150.0" />
+      <Label layoutX="379.0" layoutY="358.0" text="Paper Price">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="96.0" layoutY="321.0" text="Paper Choose">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="465.0" layoutY="512.0" mnemonicParsing="false" onAction="#donew" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 8px;" text="NEW">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="346.0" layoutY="512.0" mnemonicParsing="false" onAction="#doremove" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: orange; -fx-background-radius: 8px;" text="REMOVE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="229.0" layoutY="512.0" mnemonicParsing="false" onAction="#doupdate" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 8px;" text="UPDATE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="99.0" layoutY="512.0" mnemonicParsing="false" onAction="#dosave" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: orange; -fx-background-radius: 8px;" text="SAVE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ListView fx:id="lstpaper" layoutX="96.0" layoutY="374.0" onMouseClicked="#dolist" prefHeight="93.0" prefWidth="150.0" />
+      <ListView fx:id="lstprice" layoutX="378.0" layoutY="381.0" prefHeight="93.0" prefWidth="150.0" />
+      <Label fx:id="label1" layoutX="113.0" layoutY="474.0" text="(double click to remove item)">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <Label fx:id="lbldate" layoutX="374.0" layoutY="305.0" text="Last Payment Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtdate" layoutX="379.0" layoutY="328.0" onAction="#dodate" />
+   </children>
+</AnchorPane>
