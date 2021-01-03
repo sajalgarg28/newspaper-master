@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="600.0" minWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hawkercontrol.hawkercpController">
+   <children>
+      <Label layoutX="161.0" layoutY="27.0" text="Hawker,s Control Panel" textFill="RED">
+         <font>
+            <Font name="Courier New Bold" size="21.0" />
+         </font>
+      </Label>
+      <Line endX="231.0" layoutX="300.0" layoutY="86.0" startX="-230.0" />
+      <ImageView fx:id="pic" fitHeight="150.0" fitWidth="208.0" layoutX="378.0" layoutY="116.0" onMouseClicked="#dopic" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../blank.PNG" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <Label layoutX="49.0" layoutY="143.0" text="Name">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="219.0" text="Mobile No.1">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="364.0" text="Salary">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="292.0" text="Mobile No.2">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="442.0" text="Address">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="adhar" layoutX="431.0" layoutY="262.0" text="Upload Adhar Pic">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="comboname" editable="true" layoutX="112.0" layoutY="139.0" prefWidth="150.0" />
+      <Button fx:id="btnfetch" layoutX="285.0" layoutY="139.0" mnemonicParsing="false" onAction="#dofetch" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: blue; -fx-background-radius: 8px; -fx-text-fill: white;" text="FETCH">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="txtmob1" layoutX="113.0" layoutY="214.0" />
+      <TextField fx:id="txtmob2" layoutX="113.0" layoutY="288.0" />
+      <TextField fx:id="txtsalary" layoutX="113.0" layoutY="360.0" />
+      <Button fx:id="btnsave" layoutX="421.0" layoutY="313.0" mnemonicParsing="false" onAction="#dosave" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: orange; -fx-background-radius: 8px;" text="SAVE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnupdate" layoutX="421.0" layoutY="380.0" mnemonicParsing="false" onAction="#doupdate" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 8px;" text="UPDATE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnremove" layoutX="421.0" layoutY="450.0" mnemonicParsing="false" onAction="#doremove" style="-fx-background-color: orange; -fx-background-radius: 8px;" text="REMOVE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label layoutX="51.0" layoutY="307.0" prefHeight="13.0" prefWidth="39.0" text="(if any)">
+         <font>
+            <Font size="9.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lstaddress" editable="true" layoutX="113.0" layoutY="475.0" onMouseClicked="#removeitem" prefHeight="77.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboadd" editable="true" layoutX="112.0" layoutY="438.0" onAction="#additem" prefWidth="150.0" />
+      <Button fx:id="btnnre" layoutX="421.0" layoutY="507.0" mnemonicParsing="false" onAction="#donew" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: green; -fx-text-fill: white; -fx-background-radius: 8px;" text="NEW">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Label fx:id="lblinfo" layoutX="97.0" layoutY="558.0" text="Double click on place to remove from list">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
